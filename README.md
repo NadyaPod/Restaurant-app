@@ -1,6 +1,6 @@
 # Restaurant-app
 
-SPA restaurant with React
+Restaurant SPA with React
 
 :ballot_box_with_check: [Deploy](https://nadya-pod-innopolis-diploma.surge.sh/)
 
