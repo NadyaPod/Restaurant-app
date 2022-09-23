@@ -1,0 +1,88 @@
+.card {
+  max-width: 312px;
+  min-height: 552px;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 20px 30px;
+  color: #ffffff;
+  border: 1px solid #d58d53;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #d58c51;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 290px;
+    min-height: 350px;
+    padding: 20px;
+  }
+}  
+
+.card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  @media (max-width: 680px) {
+    font-size: 16px;
+  }
+}
+
+.card__description {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+
+  @media (max-width: 680px) {
+    font-size: 13px;
+  }
+}
+
+.card__footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.card__weight {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.btn-add {
+  padding: 10px;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #d58c51;
+
+    circle {
+      stroke: #d58c51;
+    }
+  }
+}

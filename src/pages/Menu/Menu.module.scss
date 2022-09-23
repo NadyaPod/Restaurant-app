@@ -1,0 +1,69 @@
+html {
+  overflow-y: hidden;
+
+  @media (max-width: 1230px) {
+    overflow-y: auto;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 70px;
+
+  @media (max-width: 860px) {
+    padding: 0 30px;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: 10px;
+  height: 18vh;
+
+  @media (max-width: 1152px) {
+    flex-direction: column;
+    padding: 40px;
+    height: auto;
+  }
+}
+
+.widget-wrap {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 35px 10px;
+  height: 80vh;
+  overflow-y: scroll;
+
+  @media (max-width: 1230px) {
+    padding-bottom: 20px;
+    overflow-y: hidden;
+    height: auto;
+  }
+
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #161516;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ac7243;
+  border-radius: 5px;
+}

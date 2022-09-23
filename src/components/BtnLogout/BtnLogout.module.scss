@@ -1,0 +1,22 @@
+.btn-logout {
+  display: block;
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid #d58c51;
+  padding: 12px 30px;
+  color: #d58c51;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  align-self: center;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 1040px) {
+    width: 150px;
+    margin-left: 10px;
+  }
+}

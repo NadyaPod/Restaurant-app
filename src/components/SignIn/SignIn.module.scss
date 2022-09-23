@@ -1,0 +1,163 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal {
+  width: 460px;
+  background-color: #ffffff;
+  padding: 0 20px 35px;
+}
+
+.modal__header {
+  position: relative;
+  padding: 36px 0;
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0;
+  text-align: center;
+  font-size: 31px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #161516;
+  text-transform: uppercase;
+}
+
+.modal__link {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  font-size: 11px;
+  line-height: 13px;
+  color: #d58c51;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #131313;
+  }
+
+  &:focus {
+    outline: 2px solid #6f4b0c;
+  }
+}
+
+.input-wrap {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 9px 18px;
+  border: 1px solid #d58c51;
+  border-radius: 61px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #161516;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border: 1px solid #472c16;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid #6f4b0c;
+  }
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #161516;
+}
+
+.modal__label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #301411;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.custom__checkbox {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d58c51;
+  border-radius: 50%;
+
+  &:hover {
+    border: 1px solid #472c16;
+    opacity: 0.7;
+  }
+}
+
+.checkbox:checked + .custom__checkbox {
+  background-image: url("../../../public/icons/check-mark.png");
+  background-size: contain;
+}
+
+.checkbox:focus + .custom__checkbox {
+  outline: 2px solid #6f4b0c;
+}
+
+.modal__button {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 13px 20px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #131313;
+  background-color: #d58c51;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid #6f4b0c;
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: 5px;
+  left: 8px;
+  display: block;
+  color: rgb(255, 11, 11);
+  font-size: 8px;
+  line-height: 10px;
+  font-weight: 400;
+
+  &_aligned {
+    left: 48%;
+    transform: translateX(-48%);
+    bottom: 20px;
+  }
+}
+

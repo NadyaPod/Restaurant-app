@@ -1,0 +1,116 @@
+.card {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr 2fr 1fr;
+  gap: 20px;
+  align-items: center;
+  color: #ffffff;
+
+  @media (max-width: 1040px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 50px auto;
+  }
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+.card__image-link {
+  @media (max-width: 1040px) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+.card__image {
+  display: block;
+  object-fit: contain;
+}
+
+.card__title {
+  max-width: 266px;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 500;
+
+  @media (max-width: 1040px) {
+    grid-column: 1 / -1;
+    text-align: center;
+    justify-self: center;
+  }
+}
+
+.card__price {
+  color: #d58d53;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card__amount-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__amount {
+  width: 70px;
+  border: 1px solid #d58d53;
+  border-radius: 10px;
+  color: #d58d53;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card__amount-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    transition: all 0.3s ease;
+    stroke: #d58d53;
+
+    &:hover {
+      stroke: #ffffff;
+    }
+  }
+}
+
+.btn-remove {
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    circle {
+      transition: all 0.3s ease;
+      fill: transparent;
+    }
+
+    path {
+      transition: all 0.3s ease;
+    }  
+
+    &:hover {
+      path {
+        fill: #ffffff;
+      }
+
+      circle {
+        fill: #d58c51;
+      }
+    }
+  }
+}  
